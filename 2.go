@@ -2,15 +2,18 @@ package main
 
 import "fmt"
 
-func totalBaggageWeight(weights []float64) float64 {
- sum := 0.0
- for _, w := range weights {
-  sum += w
- }
- return sum
-}
+func main(){
+	
+ a := 0
+ b := 0
+ c := 0
 
-func main() {
- weights := []float64{7.5, 2.0, 1.2}
- fmt.Printf("Общий вес багажа: %.3f кг\n", totalBaggageWeight(weights))
+ fmt.Print("Введите вес основного багажа: ")
+ fmt.Scan(&a)
+ fmt.Print("Введите вес ручной клади: ")
+ fmt.Scan(&b)
+ fmt.Print("Введите вес доп. ручной клади: ")
+ fmt.Scan(&c)
+
+ fmt.Print("Общий вес = ", a + b + c)
 }
