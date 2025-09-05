@@ -26,6 +26,6 @@ func totalHotelCost(dates []string) int {
 }
 
 func main() {
- dates := []string{"2025-09-01", "2025-09-02", "2025-09-05"}
+ dates := []string{"2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-13", "2025-09-14", "2025-09-25", "2025-09-26"}
  fmt.Println("Стоимость проживания:", totalHotelCost(dates))
 }
